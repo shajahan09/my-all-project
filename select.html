@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+<h2 style="text-align:center">Angular Select options</h2>
+	<div ng-controller="myCtrl">
+			<select ng-model="selec-Name" ng-options="x for x in items"></select
+
+	</div>
+	<script>
+			var app=angular.module("myApp",[]);
+			app.controller("myCtrl",function($scope){
+			$scope.items=["Bangla","English","Hindi"];
+			});
+
+
+	</script>
+
+
+</body>
+
+</html> 
